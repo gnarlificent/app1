@@ -1,9 +1,9 @@
-<h1>Listing posts</h1>
+<h1>Posties</h1>
 
 <table>
   <tr>
-    <th>Title</th>
-    <th>Text</th>
+    <th>User  </th>
+    <th>Posty  </th>
     <th></th>
     <th></th>
     <th></th>
@@ -13,13 +13,13 @@
   <tr>
     <td><%= post.title %></td>
     <td><%= post.text %></td>
-    <td><%= link_to 'Show', post %></td>
+    <td><%= link_to 'Expand', post %></td>
     <td><%= link_to 'Edit', edit_post_path(post) %></td>
-    <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    <td><%= link_to 'Delete', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
   </tr>
 <% end %>
 </table>
 
 <br />
 
-<%= link_to 'New Post', new_post_path %>
+<%= link_to 'New Posty', new_post_path %>
