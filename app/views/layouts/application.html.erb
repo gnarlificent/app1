@@ -7,9 +7,25 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-<div class="container">
-<%= yield %>
-</div>
+	<div class="navbar navbar-fixed-top">
+	  <div class="navbar-inner">
+	    <div class="container">
+	      <a class="brand" href="/">Posty</a>
+	    </div>
+	  </div>
+	</div>
+	<div class="container span9">
+		<%= yield %>
+	</div>
+	<div class="container span3">
+		<h2>What is Posty?</h2>
+		<p>Posty is where you can annonymously post anything!</p>
+	</div>
+	<footer>
+  		<div class="container">
+    Gnarlificent 2013
+  		</div>
+	</footer>
 
 
 </body>

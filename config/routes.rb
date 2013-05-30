@@ -1,4 +1,5 @@
 App1::Application.routes.draw do
+  root :to => redirect('/posts')
   resources :posts
 
 

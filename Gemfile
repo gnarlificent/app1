@@ -9,9 +9,9 @@ group :production do
 	gem 'pg'
 end
 
-#group :developent , :test do
-#	gem 'sqlite3'
-#end
+group :developent , :test do
+	gem 'sqlite3'
+end
 	
 
 # Gems used only for assets and not required
@@ -19,6 +19,9 @@ end
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'
+
+
+  gem 'twitter-bootstrap-rails'
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   # gem 'therubyracer', :platforms => :ruby

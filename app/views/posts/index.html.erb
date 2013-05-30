@@ -1,6 +1,6 @@
 <h1>Posties</h1>
 
-<table>
+<table class="table-bordered">
   <tr>
     <th>User  </th>
     <th>Posty  </th>
@@ -11,11 +11,11 @@
 
 <% @posts.each do |post| %>
   <tr>
-    <td><%= post.title %></td>
-    <td><%= post.text %></td>
-    <td><%= link_to 'Expand', post %></td>
-    <td><%= link_to 'Edit', edit_post_path(post) %></td>
-    <td><%= link_to 'Delete', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    <td><%= post.title %>      |   </td>
+    <td>|   <%= post.text %></td>
+    <td class="btn btn-success"><%= link_to 'Expand', post %></td>
+    <td class="btn btn-warning"><%= link_to 'Edit', edit_post_path(post) %></td>
+    <td class="btn btn-danger"><%= link_to 'Delete', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
   </tr>
 <% end %>
 </table>
